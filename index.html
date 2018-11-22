@@ -35,7 +35,7 @@
         <br><br>
         <h1 class="header center black-text ">NUFC</h1>
         <div class="row center">
-          <h5 class="header col s12 light black-text">Come and see all you need to know about the Toon Army including are playing next and see their previous matches and where they currently stand in the table. Here you can also find loads of intresting facts about the club such as notable former players and managers and what previous silverware they have won. You can also chat with fellow Magpie supporters as well.</h5>
+          <h5 class="header col s12 light dark black-text">Come and see all you need to know about the Toon Army including are playing next and see their previous matches and where they currently stand in the table. Here you can also find loads of intresting facts about the club such as notable former players and managers and what previous silverware they have won. You can also chat with fellow Magpie supporters as well.</h5>
         </div>
         <div class="row center">
          
@@ -44,12 +44,35 @@
 
       </div>
     </div>
-    <div class="parallax">
+   <div class="parallax">
         <div class="video-container">
-        <iframe width="853" height="480" src="assets/football.mp4" frameborder="0" allowfullscreen></iframe>
-      </div></div>
-  </div>
+        <!--video embed-->
+<video id="my-video" class="video" muted loop>
+<source src="assets/football.mp4" type="video/mp4">
+</video>
 
+<!--javascript-->
+<script>
+(function() {
+/**
+* Video element
+* @type {HTMLElement}
+*/
+var video = document.getElementById("my-video");
+
+/**
+* Check if video can play, and play it
+*/
+video.addEventListener( "canplay", function() {
+video.play();
+});
+})();
+</script>
+      </div>
+    </div>
+  </div> 
+      
+     
 
   <div class="container">
     <div class="section">
